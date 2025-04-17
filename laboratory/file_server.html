@@ -16,7 +16,7 @@
 <body>
     <div id="header"></div>
     <script>
-        fetch('/layouts/header.html')
+        fetch('./layouts/header.html')
             .then(response => response.text())
             .then(data => document.getElementById('header').innerHTML = data);
     </script>
@@ -65,7 +65,7 @@
     
     <div id="footer"></div>
     <script>
-        fetch('/layouts/footer.html')
+        fetch('./layouts/footer.html')
             .then(response => response.text())
             .then(data => document.getElementById('footer').innerHTML = data);
     </script>
